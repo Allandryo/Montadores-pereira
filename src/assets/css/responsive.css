@@ -41,9 +41,38 @@
     font-size: 1.85rem;
   }
 
+  /* Evita scroll horizontal en toda la página */
+  html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
+  /* Todos los contenedores respetan el ancho */
+  .container,
+  section,
+  .site-header,
+  .site-footer {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
   /* Header Mobile Menu Toggle */
   .mobile-nav-toggle {
     display: flex;
+    flex-shrink: 0;   /* no se encoge aunque el header-actions sea grande */
+    order: 3;         /* siempre al final del flex del header */
+  }
+
+  /* Ocultar el botón WhatsApp del header en mobile:
+     ya existe el botón flotante fijo, es redundante y tapa el hamburger */
+  .header-actions {
+    order: 2;
+  }
+
+  .header-actions .btn-whatsapp,
+  .header-actions .btn-cta,
+  .header-actions .btn-primary {
+    display: none;
   }
 
   .nav-menu {
@@ -151,6 +180,11 @@
 @media screen and (max-width: 480px) {
   .section-title {
     font-size: 1.6rem;
+  }
+
+  /* Cualquier elemento que pueda sobresalir */
+  img, video, iframe, table {
+    max-width: 100%;
   }
 
   .services-grid {
