@@ -555,3 +555,49 @@ textarea.form-control {
   color: #d90429;
   border: 1px solid rgba(217, 4, 41, 0.2);
 }
+
+/* ==========================================================================
+   CONTACT CARDS
+   ========================================================================== */
+.contact-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--grid-gap);
+  max-width: 760px;
+  margin: 0 auto;
+}
+.contact-card {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border-light);
+  background-color: var(--color-light);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-normal);
+  text-decoration: none;
+  color: inherit;
+}
+.contact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-primary);
+}
+.contact-card-icon {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: var(--radius-md);
+  background-color: var(--color-light-surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  transition: var(--transition-normal);
+}
+.contact-card:hover .contact-card-icon { background-color: var(--color-primary); color: #fff; }
+.contact-card--whatsapp:hover .contact-card-icon { background-color: #25D366; }
+.contact-card-body h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.4rem; color: var(--color-dark); }
+.contact-card-body p { font-size: 0.9rem; color: var(--color-text-dark-muted); margin-bottom: 0.75rem; line-height: 1.5; }
+.contact-card-action { font-family: var(--font-heading); font-weight: 700; font-size: 0.85rem; color: var(--color-primary); text-transform: uppercase; letter-spacing: 0.5px; }

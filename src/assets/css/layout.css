@@ -55,18 +55,19 @@
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: clamp(1.25rem, 2.2vw, 2.5rem);
 }
 
 .nav-link {
   font-family: var(--font-heading);
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 0.925rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   color: var(--color-text-dark-muted);
   position: relative;
   padding: 0.5rem 0;
+  white-space: nowrap;
 }
 
 .nav-link::after {
@@ -104,6 +105,7 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  flex-shrink: 0;
 }
 
 /* Mobile Toggle */
