@@ -21,13 +21,8 @@
        ========================================================================== */ -->
   <header class="site-header">
     <div class="container header-container">
-      <a href="#" class="logo-link">
-        <!-- SVG Logomark representing wood flooring pattern -->
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M4 6h16M4 12h16M4 18h16"/>
-          <path d="M12 2v20"/>
-        </svg>
-        <span class="logo-text">Pereira<span class="logo-accent">.</span></span>
+      <a href="#" class="logo-link" aria-label="Montadores Pereira">
+        <img src="assets/img/icons/logo-cabecera.svg" alt="Montadores Pereira" class="header-logo-img">
       </a>
 
       <!-- Desktop Nav Menu -->
@@ -37,16 +32,13 @@
         <a href="#trabajos" class="nav-link">Trabajos</a>
         <a href="#antes-despues" class="nav-link">Antes/Después</a>
         <a href="#sobre-nosotros" class="nav-link">Sobre Nosotros</a>
-        <a href="#contacto" class="nav-link">Contacto</a>
       </nav>
 
       <!-- Header CTAs -->
       <div class="header-actions">
         <a href="#contacto" class="btn btn-secondary">Presupuesto</a>
         <a href="https://wa.me/34649150972?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20llamada." class="btn btn-whatsapp" target="_blank" rel="noopener">
-          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.488 2.01 14.028 1.012 11.996 1.012c-5.448 0-9.873 4.372-9.877 9.8.001 1.83.5 3.61 1.445 5.176l-.952 3.479 3.578-.937zm12.357-6.95c-.326-.163-1.93-.953-2.229-1.062-.3-.109-.518-.163-.734.163-.217.327-.84.843-1.03 1.062-.19.218-.38.245-.706.082-.327-.163-1.38-.508-2.63-1.622-.972-.867-1.628-1.938-1.819-2.264-.19-.327-.02-.504.144-.666.148-.146.326-.38.49-.57.163-.19.217-.327.326-.54.109-.219.055-.409-.028-.571-.082-.163-.734-1.77-.978-2.356-.24-.576-.484-.498-.663-.507-.171-.008-.368-.009-.565-.009-.197 0-.518.073-.789.37-.272.296-1.034 1.009-1.034 2.46s1.055 2.85 1.203 3.048c.148.197 2.077 3.172 5.031 4.451.703.304 1.252.486 1.678.621.708.225 1.353.193 1.863.118.568-.084 1.93-.789 2.202-1.552.272-.763.272-1.417.19-1.552-.082-.136-.299-.218-.626-.38z"/>
-          </svg>
+          <img src="assets/img/icons/whatsapp.svg" width="20" height="20" alt="WhatsApp">
           <span>WhatsApp</span>
         </a>
         <button class="mobile-nav-toggle" aria-label="Abrir Menú">
@@ -169,8 +161,11 @@
       <div class="gallery-filter-buttons" id="gallery-filters">
         <button class="filter-btn active" data-filter="all">Todos</button>
         <button class="filter-btn" data-filter="parquet">Parquet</button>
+        <button class="filter-btn" data-filter="suelo-laminado">Suelo laminado</button>
+        <button class="filter-btn" data-filter="suelo-vinilico">Suelo vinílico</button>
         <button class="filter-btn" data-filter="tarima">Tarima</button>
-        <button class="filter-btn" data-filter="revestimientos">Revestimientos</button>
+        <button class="filter-btn" data-filter="revestimiento">Revestimiento de pared y/o fachadas</button>
+        <button class="filter-btn" data-filter="otros">Otros</button>
       </div>
 
       <!-- Gallery Grid Container -->
@@ -204,30 +199,56 @@
        ========================================================================== */ -->
   <section id="sobre-nosotros" class="section-padding" style="background-color: var(--color-light-surface); position: relative; overflow: hidden;">
     <div class="container">
-      <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: var(--grid-gap); align-items: center;">
+      <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: var(--grid-gap); align-items: flex-start;">
         <div>
-          <span style="font-family: var(--font-heading); font-weight: 700; text-transform: uppercase; color: var(--color-primary); letter-spacing: 1px; display: block; margin-bottom: var(--space-xs);">Montadores Pereira</span>
-          <h2 style="font-size: 2.5rem; font-weight: 800; text-transform: uppercase; line-height: 1.15; margin-bottom: var(--space-md);">Paseo de Calidad sobre Madera</h2>
-          <p style="color: var(--color-text-dark-muted); margin-bottom: var(--space-md);">
-            Somos una empresa familiar afincada en Palma de Mallorca con años de experiencia en el sector del parquet. Nuestro compromiso es ofrecer a cada cliente un asesoramiento personalizado y acabados de primera clase.
+          <span style="font-family: var(--font-heading); font-weight: 700; text-transform: uppercase; color: var(--color-primary); letter-spacing: 1px; display: block; margin-bottom: var(--space-xs);">Sobre Nosotros</span>
+          <h2 style="font-size: 2.3rem; font-weight: 800; text-transform: uppercase; line-height: 1.15; margin-bottom: var(--space-md);">Especialistas en Pavimentos y Revestimientos de Madera</h2>
+          <p style="color: var(--color-text-dark-muted); margin-bottom: var(--space-md); font-size: 1.05rem;">
+            En <strong>Montadores Pereira</strong> somos una empresa familiar afincada en Palma de Mallorca con años de experiencia en el sector. Nos dedicamos a la instalación, renovación y revestimiento de espacios con soluciones de madera de la máxima calidad y acabados impecables.
           </p>
           <p style="color: var(--color-text-dark-muted); margin-bottom: var(--space-lg);">
-            Trabajamos mano a mano con diseñadores, arquitectos y particulares para que cada tarima, parquet o revestimiento de terraza exterior refleje exactamente el carácter y calidez que nuestros clientes buscan para sus hogares.
+            Trabajamos cada proyecto mano a mano con diseñadores, arquitectos y particulares, adaptándonos a las necesidades de cada estancia con asesoramiento técnico personalizado.
           </p>
-          <div style="display: flex; gap: 2rem;">
+          <div style="display: flex; gap: 2rem; margin-top: var(--space-md);">
             <div>
-              <span class="text-gradient" style="font-family: var(--font-heading); font-size: 2.5rem; font-weight: 800; display: block; line-height: 1;">100%</span>
-              <span style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 700; color: var(--color-text-dark-muted);">Garantía</span>
+              <span class="text-gradient" style="font-family: var(--font-heading); font-size: 2.2rem; font-weight: 800; display: block; line-height: 1;">100%</span>
+              <span style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 700; color: var(--color-text-dark-muted);">Garantía de Calidad</span>
             </div>
             <div>
-              <span class="text-gradient" style="font-family: var(--font-heading); font-size: 2.5rem; font-weight: 800; display: block; line-height: 1;">Palma</span>
-              <span style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 700; color: var(--color-text-dark-muted);">Área de Servicio</span>
+              <span class="text-gradient" style="font-family: var(--font-heading); font-size: 2.2rem; font-weight: 800; display: block; line-height: 1;">Mallorca</span>
+              <span style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 700; color: var(--color-text-dark-muted);">Cobertura Total</span>
             </div>
           </div>
         </div>
-        <div style="position: relative; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg);">
-          <div style="aspect-ratio: 4 / 3; background-color: var(--color-dark-surface); border: 1px solid var(--color-border-light);"></div>
-          <!-- Real photos can be set here later -->
+
+        <div>
+          <h3 style="font-size: 1.3rem; font-weight: 700; text-transform: uppercase; margin-bottom: var(--space-sm); color: var(--color-dark);">¿Qué hacemos? Nuestras Especialidades:</h3>
+          <div style="display: flex; flex-direction: column; gap: 1rem;">
+            <div style="background-color: var(--color-light); padding: 1rem 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--color-border-light);">
+              <h4 style="font-size: 1rem; color: var(--color-primary); margin-bottom: 0.25rem;">🪵 Parquet</h4>
+              <p style="font-size: 0.9rem; color: var(--color-text-dark-muted); margin: 0;">Instalación y restauración de parquet de madera noble natural en diversos patrones (espiga, faja, lineal) para ambientes cálidos y elegantes.</p>
+            </div>
+            <div style="background-color: var(--color-light); padding: 1rem 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--color-border-light);">
+              <h4 style="font-size: 1rem; color: var(--color-primary); margin-bottom: 0.25rem;">📐 Suelo Laminado</h4>
+              <p style="font-size: 0.9rem; color: var(--color-text-dark-muted); margin: 0;">Montaje de tarimas laminadas de alta resistencia al tráfico diario y rayado, ofreciendo gran variedad de diseños con excelente relación calidad-precio.</p>
+            </div>
+            <div style="background-color: var(--color-light); padding: 1rem 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--color-border-light);">
+              <h4 style="font-size: 1rem; color: var(--color-primary); margin-bottom: 0.25rem;">💧 Suelo Vinílico (SPC)</h4>
+              <p style="font-size: 0.9rem; color: var(--color-text-dark-muted); margin: 0;">Instalación de pavimentos vinílicos 100% resistentes al agua y humedad. La solución idónea e higiénica para cocinas, baños y comercios.</p>
+            </div>
+            <div style="background-color: var(--color-light); padding: 1rem 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--color-border-light);">
+              <h4 style="font-size: 1rem; color: var(--color-primary); margin-bottom: 0.25rem;">🏡 Tarima (Interior y Exterior)</h4>
+              <p style="font-size: 0.9rem; color: var(--color-text-dark-muted); margin: 0;">Colocación de tarimas macizas/flotantes para interiores y tarimas de exterior (teca, IPE, sintéticas) para terrazas, balcones y bordes de piscina.</p>
+            </div>
+            <div style="background-color: var(--color-light); padding: 1rem 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--color-border-light);">
+              <h4 style="font-size: 1rem; color: var(--color-primary); margin-bottom: 0.25rem;">🧱 Revestimiento de Pared y/o Fachadas</h4>
+              <p style="font-size: 0.9rem; color: var(--color-text-dark-muted); margin: 0;">Instalación de paneles, frisos decorativos y rastreles en paredes interiores y fachadas exteriores para potenciar el aislamiento y la estética.</p>
+            </div>
+            <div style="background-color: var(--color-light); padding: 1rem 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--color-border-light);">
+              <h4 style="font-size: 1rem; color: var(--color-primary); margin-bottom: 0.25rem;">🛠️ Otros Servicios</h4>
+              <p style="font-size: 0.9rem; color: var(--color-text-dark-muted); margin: 0;">Acuchillado y barnizado sin polvo, colocación de rodapiés, zócalos, remates de escaleras y reparaciones personalizadas a medida.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -247,15 +268,11 @@
 
       <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: var(--space-xl);">
         <a href="https://www.instagram.com/montadorespereira/" target="_blank" rel="noopener" class="btn btn-secondary" style="gap: 0.75rem;">
-          <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
-          </svg>
+          <img src="assets/img/icons/instagram.svg" width="24" height="24" alt="Instagram">
           <span>Instagram</span>
         </a>
         <a href="https://www.tiktok.com/@montadorespereira" target="_blank" rel="noopener" class="btn btn-secondary" style="gap: 0.75rem;">
-          <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.17-2.86-.74-3.95-1.72-.1-.09-.17-.18-.26-.28v6.86c.1 4.54-3.37 8.65-7.9 9.13-4.9.52-9.52-3.05-9.3-8 .14-3.8 3.1-7.2 6.9-7.63.78-.1 1.56-.05 2.33.09v4.13c-.94-.34-1.98-.31-2.9.11-1.22.56-1.98 1.95-1.84 3.28.16 1.44 1.4 2.61 2.84 2.53 1.54-.08 2.67-1.42 2.67-2.95V.02z"/>
-          </svg>
+          <img src="assets/img/icons/tiktok.svg" width="24" height="24" alt="TikTok">
           <span>TikTok</span>
         </a>
       </div>
@@ -325,9 +342,7 @@
       <a href="https://wa.me/34649150972?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20llamada."
          class="contact-card contact-card--whatsapp" target="_blank" rel="noopener">
         <div class="contact-card-icon">
-          <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.488 2.01 14.028 1.012 11.996 1.012c-5.448 0-9.873 4.372-9.877 9.8.001 1.83.5 3.61 1.445 5.176l-.952 3.479 3.578-.937zm12.357-6.95c-.326-.163-1.93-.953-2.229-1.062-.3-.109-.518-.163-.734.163-.217.327-.84.843-1.03 1.062-.19.218-.38.245-.706.082-.327-.163-1.38-.508-2.63-1.622-.972-.867-1.628-1.938-1.819-2.264-.19-.327-.02-.504.144-.666.148-.146.326-.38.49-.57.163-.19.217-.327.326-.54.109-.219.055-.409-.028-.571-.082-.163-.734-1.77-.978-2.356-.24-.576-.484-.498-.663-.507-.171-.008-.368-.009-.565-.009-.197 0-.518.073-.789.37-.272.296-1.034 1.009-1.034 2.46s1.055 2.85 1.203 3.048c.148.197 2.077 3.172 5.031 4.451.703.304 1.252.486 1.678.621.708.225 1.353.193 1.863.118.568-.084 1.93-.789 2.202-1.552.272-.763.272-1.417.19-1.552-.082-.136-.299-.218-.626-.38z"/>
-          </svg>
+          <img src="assets/img/icons/whatsapp.svg" width="32" height="32" alt="WhatsApp">
         </div>
         <div class="contact-card-body">
           <h3 data-i18n="contact.whatsapp_title">Escribir por WhatsApp</h3>
@@ -352,14 +367,10 @@
         </p>
         <div class="footer-socials">
           <a href="https://www.instagram.com/montadorespereira/" target="_blank" rel="noopener" class="social-icon-link" aria-label="Instagram">
-            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
-            </svg>
+            <img src="assets/img/icons/instagram.svg" width="22" height="22" alt="Instagram">
           </a>
           <a href="https://www.tiktok.com/@montadorespereira" target="_blank" rel="noopener" class="social-icon-link" aria-label="TikTok">
-            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.17-2.86-.74-3.95-1.72-.1-.09-.17-.18-.26-.28v6.86c.1 4.54-3.37 8.65-7.9 9.13-4.9.52-9.52-3.05-9.3-8 .14-3.8 3.1-7.2 6.9-7.63.78-.1 1.56-.05 2.33.09v4.13c-.94-.34-1.98-.31-2.9.11-1.22.56-1.98 1.95-1.84 3.28.16 1.44 1.4 2.61 2.84 2.53 1.54-.08 2.67-1.42 2.67-2.95V.02z"/>
-            </svg>
+            <img src="assets/img/icons/tiktok.svg" width="22" height="22" alt="TikTok">
           </a>
         </div>
       </div>
@@ -409,9 +420,7 @@
 
   <!-- Fixed WhatsApp Floating CTA -->
   <a href="https://wa.me/34649150972?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20llamada." class="btn btn-whatsapp btn-whatsapp-fixed" target="_blank" rel="noopener" aria-label="Contacto por WhatsApp">
-    <svg fill="currentColor" viewBox="0 0 24 24">
-      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.488 2.01 14.028 1.012 11.996 1.012c-5.448 0-9.873 4.372-9.877 9.8.001 1.83.5 3.61 1.445 5.176l-.952 3.479 3.578-.937zm12.357-6.95c-.326-.163-1.93-.953-2.229-1.062-.3-.109-.518-.163-.734.163-.217.327-.84.843-1.03 1.062-.19.218-.38.245-.706.082-.327-.163-1.38-.508-2.63-1.622-.972-.867-1.628-1.938-1.819-2.264-.19-.327-.02-.504.144-.666.148-.146.326-.38.49-.57.163-.19.217-.327.326-.54.109-.219.055-.409-.028-.571-.082-.163-.734-1.77-.978-2.356-.24-.576-.484-.498-.663-.507-.171-.008-.368-.009-.565-.009-.197 0-.518.073-.789.37-.272.296-1.034 1.009-1.034 2.46s1.055 2.85 1.203 3.048c.148.197 2.077 3.172 5.031 4.451.703.304 1.252.486 1.678.621.708.225 1.353.193 1.863.118.568-.084 1.93-.789 2.202-1.552.272-.763.272-1.417.19-1.552-.082-.136-.299-.218-.626-.38z"/>
-    </svg>
+    <img src="assets/img/icons/whatsapp.svg" width="30" height="30" alt="WhatsApp">
   </a>
 
   <!-- JavaScript Modules -->

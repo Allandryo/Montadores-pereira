@@ -47,12 +47,22 @@ async function initGallery() {
 function renderGalleryItems(items, container) {
   container.innerHTML = '';
   
+  const categoryLabels = {
+    'parquet': 'Parquet',
+    'suelo-laminado': 'Suelo Laminado',
+    'suelo-vinilico': 'Suelo Vinílico',
+    'tarima': 'Tarima',
+    'revestimiento': 'Revestimiento de Pared / Fachada',
+    'otros': 'Otros'
+  };
+  
   items.forEach(item => {
+    const displayCategory = categoryLabels[item.categoria] || item.categoria;
     const itemHTML = `
       <div class="gallery-item" data-category="${item.categoria}" data-src="${item.imagen}" data-title="${item.titulo}">
         <img src="${item.imagen}" alt="${item.titulo}" loading="lazy">
         <div class="gallery-item-overlay">
-          <span class="gallery-item-category">${item.categoria}</span>
+          <span class="gallery-item-category">${displayCategory}</span>
           <h4 class="gallery-item-title">${item.titulo}</h4>
         </div>
       </div>

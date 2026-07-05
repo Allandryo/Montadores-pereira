@@ -3,38 +3,56 @@
     {
       "id": "parquet-roble-01",
       "categoria": "parquet",
-      "titulo": "Parquet de roble - salón Palma",
+      "titulo": "Parquet de roble noble - salón Palma",
       "imagen": "assets/img/work/parquet/parquet-roble-01.jpg"
     },
     {
       "id": "parquet-nogal-02",
       "categoria": "parquet",
-      "titulo": "Parquet de nogal - dormitorio principal",
+      "titulo": "Parquet de nogal en espiga - dormitorio principal",
       "imagen": "assets/img/work/parquet/parquet-nogal-02.jpg"
+    },
+    {
+      "id": "laminado-ac5-01",
+      "categoria": "suelo-laminado",
+      "titulo": "Suelo laminado AC5 alta resistencia - Son Espanyolet",
+      "imagen": "assets/img/work/suelo-laminado/suelo-laminado-01.jpg"
+    },
+    {
+      "id": "vinilico-spc-01",
+      "categoria": "suelo-vinilico",
+      "titulo": "Suelo vinílico SPC resistente al agua - cocina y baño",
+      "imagen": "assets/img/work/suelo-vinilico/vinilico-01.jpg"
     },
     {
       "id": "tarima-flotante-01",
       "categoria": "tarima",
-      "titulo": "Tarima flotante - piso reformado Son Espanyolet",
+      "titulo": "Tarima flotante multicapa - vivienda Santa Catalina",
       "imagen": "assets/img/work/tarima/tarima-flotante-01.jpg"
     },
     {
       "id": "tarima-exterior-01",
       "categoria": "tarima",
-      "titulo": "Tarima exterior - terraza ático",
+      "titulo": "Tarima de exterior en IPE - terraza ático Portals",
       "imagen": "assets/img/work/tarima/tarima-exterior-01.jpg"
     },
     {
-      "id": "vinilico-01",
-      "categoria": "revestimientos",
-      "titulo": "Suelo vinílico SPC - local comercial",
-      "imagen": "assets/img/work/revestimientos/vinilico-01.jpg"
+      "id": "revestimiento-pared-01",
+      "categoria": "revestimiento",
+      "titulo": "Revestimiento de pared en friso decorativo de madera",
+      "imagen": "assets/img/work/revestimiento/revestimiento-pared-01.jpg"
     },
     {
-      "id": "acuchillado-01",
-      "categoria": "revestimientos",
-      "titulo": "Acuchillado y barnizado - vivienda Génova",
-      "imagen": "assets/img/work/revestimientos/acuchillado-01.jpg"
+      "id": "revestimiento-fachada-01",
+      "categoria": "revestimiento",
+      "titulo": "Revestimiento de fachada exterior en composite",
+      "imagen": "assets/img/work/revestimiento/revestimiento-fachada-01.jpg"
+    },
+    {
+      "id": "otros-acuchillado-01",
+      "categoria": "otros",
+      "titulo": "Acuchillado, barnizado ecológico y restauración a medida",
+      "imagen": "assets/img/work/otros/acuchillado-01.jpg"
     }
   ],
   "antesDespues": [

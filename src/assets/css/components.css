@@ -83,9 +83,11 @@
   box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
 }
 
-.btn-whatsapp-fixed svg {
+.btn-whatsapp-fixed svg,
+.btn-whatsapp-fixed img {
   width: 30px;
   height: 30px;
+  object-fit: contain;
 }
 
 /* ==========================================================================
@@ -595,6 +597,11 @@ textarea.form-control {
   justify-content: center;
   color: var(--color-primary);
   transition: var(--transition-normal);
+}
+.contact-card-icon img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
 }
 .contact-card:hover .contact-card-icon { background-color: var(--color-primary); color: #fff; }
 .contact-card--whatsapp:hover .contact-card-icon { background-color: #25D366; }
