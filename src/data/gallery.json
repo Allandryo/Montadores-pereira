@@ -13,16 +13,76 @@
       "imagen": "assets/img/work/parquet/parquet-nogal-02.jpg"
     },
     {
+      "id": "parquet-fresno-03",
+      "categoria": "parquet",
+      "titulo": "Parquet de fresno blanqueado - apartamento Portixol",
+      "imagen": "assets/img/work/parquet/parquet-fresno-03.jpg"
+    },
+    {
+      "id": "parquet-cerezo-04",
+      "categoria": "parquet",
+      "titulo": "Parquet de cerezo natural - estudio Santa Catalina",
+      "imagen": "assets/img/work/parquet/parquet-cerezo-04.jpg"
+    },
+    {
+      "id": "parquet-haya-05",
+      "categoria": "parquet",
+      "titulo": "Parquet de haya vaporizada - piso Son Armadams",
+      "imagen": "assets/img/work/parquet/parquet-haya-05.jpg"
+    },
+    {
       "id": "laminado-ac5-01",
       "categoria": "suelo-laminado",
       "titulo": "Suelo laminado AC5 alta resistencia - Son Espanyolet",
       "imagen": "assets/img/work/suelo-laminado/suelo-laminado-01.jpg"
     },
     {
+      "id": "laminado-roble-02",
+      "categoria": "suelo-laminado",
+      "titulo": "Laminado roble gris - reforma integral Inca",
+      "imagen": "assets/img/work/suelo-laminado/suelo-laminado-02.jpg"
+    },
+    {
+      "id": "laminado-natural-03",
+      "categoria": "suelo-laminado",
+      "titulo": "Laminado efecto natural - local comercial Centro",
+      "imagen": "assets/img/work/suelo-laminado/suelo-laminado-03.jpg"
+    },
+    {
+      "id": "laminado-oscuro-04",
+      "categoria": "suelo-laminado",
+      "titulo": "Laminado tono oscuro - despacho profesional Marratxí",
+      "imagen": "assets/img/work/suelo-laminado/suelo-laminado-04.jpg"
+    },
+    {
       "id": "vinilico-spc-01",
       "categoria": "suelo-vinilico",
       "titulo": "Suelo vinílico SPC resistente al agua - cocina y baño",
       "imagen": "assets/img/work/suelo-vinilico/vinilico-01.jpg"
+    },
+    {
+      "id": "vinilico-cocina-02",
+      "categoria": "suelo-vinilico",
+      "titulo": "Vinílico efecto madera - cocina abierta Cas Català",
+      "imagen": "assets/img/work/suelo-vinilico/vinilico-02.jpg"
+    },
+    {
+      "id": "vinilico-clinica-03",
+      "categoria": "suelo-vinilico",
+      "titulo": "SPC antideslizante - clínica dental Son Ferriol",
+      "imagen": "assets/img/work/suelo-vinilico/vinilico-03.jpg"
+    },
+    {
+      "id": "vinilico-bano-04",
+      "categoria": "suelo-vinilico",
+      "titulo": "Vinílico impermeable - baño principal chalet Calvià",
+      "imagen": "assets/img/work/suelo-vinilico/vinilico-04.jpg"
+    },
+    {
+      "id": "vinilico-hotel-05",
+      "categoria": "suelo-vinilico",
+      "titulo": "SPC alto tráfico - recepción hotel boutique Palma",
+      "imagen": "assets/img/work/suelo-vinilico/vinilico-05.jpg"
     },
     {
       "id": "tarima-flotante-01",
@@ -37,6 +97,24 @@
       "imagen": "assets/img/work/tarima/tarima-exterior-01.jpg"
     },
     {
+      "id": "tarima-piscina-03",
+      "categoria": "tarima",
+      "titulo": "Tarima composite - contorno piscina Bendinat",
+      "imagen": "assets/img/work/tarima/tarima-piscina-03.jpg"
+    },
+    {
+      "id": "tarima-teca-04",
+      "categoria": "tarima",
+      "titulo": "Tarima de teca - balcón vivienda Génova",
+      "imagen": "assets/img/work/tarima/tarima-teca-04.jpg"
+    },
+    {
+      "id": "tarima-maciza-05",
+      "categoria": "tarima",
+      "titulo": "Tarima maciza de roble - salón vivienda Establiments",
+      "imagen": "assets/img/work/tarima/tarima-maciza-05.jpg"
+    },
+    {
       "id": "revestimiento-pared-01",
       "categoria": "revestimiento",
       "titulo": "Revestimiento de pared en friso decorativo de madera",
@@ -49,10 +127,58 @@
       "imagen": "assets/img/work/revestimiento/revestimiento-fachada-01.jpg"
     },
     {
+      "id": "revestimiento-rastrel-03",
+      "categoria": "revestimiento",
+      "titulo": "Rastreles decorativos - salón vivienda Llucmajor",
+      "imagen": "assets/img/work/revestimiento/revestimiento-rastrel-03.jpg"
+    },
+    {
+      "id": "revestimiento-cabecero-04",
+      "categoria": "revestimiento",
+      "titulo": "Panel de madera cabecero - dormitorio Son Vida",
+      "imagen": "assets/img/work/revestimiento/revestimiento-cabecero-04.jpg"
+    },
+    {
+      "id": "revestimiento-comercial-05",
+      "categoria": "revestimiento",
+      "titulo": "Revestimiento acústico - restaurante casco antiguo",
+      "imagen": "assets/img/work/revestimiento/revestimiento-comercial-05.jpg"
+    },
+    {
       "id": "otros-acuchillado-01",
       "categoria": "otros",
       "titulo": "Acuchillado, barnizado ecológico y restauración a medida",
       "imagen": "assets/img/work/otros/acuchillado-01.jpg"
+    },
+    {
+      "id": "otros-rodapies-02",
+      "categoria": "otros",
+      "titulo": "Colocación de rodapiés lacados - reforma Manacor",
+      "imagen": "assets/img/work/otros/rodapies-02.jpg"
+    },
+    {
+      "id": "otros-escalera-03",
+      "categoria": "otros",
+      "titulo": "Remate de escalera en roble - dúplex Arenal",
+      "imagen": "assets/img/work/otros/escalera-03.jpg"
+    },
+    {
+      "id": "otros-lijado-04",
+      "categoria": "otros",
+      "titulo": "Lijado sin polvo y barnizado satinado - piso antiguo Palma",
+      "imagen": "assets/img/work/otros/lijado-04.jpg"
+    },
+    {
+      "id": "otros-zocalos-05",
+      "categoria": "otros",
+      "titulo": "Zócalos a medida - vivienda unifamiliar Andratx",
+      "imagen": "assets/img/work/otros/zocalos-05.jpg"
+    },
+    {
+      "id": "parquet-espiga-06",
+      "categoria": "parquet",
+      "titulo": "Parquet espiga francesa - recibidor villa Deià",
+      "imagen": "assets/img/work/parquet/parquet-espiga-06.jpg"
     }
   ],
   "antesDespues": [

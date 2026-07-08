@@ -91,75 +91,117 @@
 }
 
 /* ==========================================================================
-   CARDS & GRID
+   SERVICES LIST (Row layout)
    ========================================================================== */
-/* Service Cards */
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: var(--grid-gap);
+.services-list {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.service-card {
-  background-color: var(--color-light-surface);
-  border: 1px solid var(--color-border-light);
-  border-radius: var(--radius-lg);
-  padding: var(--space-lg);
-  transition: all var(--transition-normal);
+.service-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--color-border-light);
   position: relative;
-  overflow: hidden;
+  transition: all var(--transition-normal);
 }
 
-.service-card::before {
+.service-row:first-child {
+  border-top: 1px solid var(--color-border-light);
+}
+
+.service-row::before {
   content: '';
   position: absolute;
+  left: -1.5rem;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform var(--transition-normal);
+  bottom: 0;
+  width: 3px;
+  background: var(--color-primary);
+  border-radius: 2px;
+  opacity: 0;
+  transform: scaleY(0);
+  transition: all 0.35s ease;
 }
 
-.service-card:hover::before {
-  transform: scaleX(1);
+.service-row:hover::before {
+  opacity: 1;
+  transform: scaleY(1);
 }
 
-.service-card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-lg);
-  background-color: #ffffff;
+.service-row:hover {
+  padding-left: 0.75rem;
 }
 
-.service-icon-box {
-  width: 64px;
-  height: 64px;
-  background-color: rgba(140, 98, 57, 0.08);
-  border-radius: var(--radius-md);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.service-row-number {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: var(--color-border-light);
+  line-height: 1;
+  min-width: 40px;
+  padding-top: 0.15rem;
+  transition: color var(--transition-normal);
+  user-select: none;
+}
+
+.service-row:hover .service-row-number {
   color: var(--color-primary);
-  margin-bottom: var(--space-md);
-  transition: all var(--transition-normal);
 }
 
-.service-card:hover .service-icon-box {
-  background-color: var(--color-primary);
-  color: var(--color-text-light);
-  transform: rotate(6deg);
+.service-row-content {
+  flex: 1;
 }
 
-.service-card h3 {
-  font-size: 1.35rem;
-  margin-bottom: var(--space-xs);
+.service-row-content h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  color: var(--color-dark);
 }
 
-.service-card p {
+.service-row-content p {
   color: var(--color-text-dark-muted);
   font-size: 0.95rem;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.service-row-tag {
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--color-primary);
+  white-space: nowrap;
+  padding-top: 0.25rem;
+  opacity: 0.7;
+}
+
+.service-row:hover .service-row-tag {
+  opacity: 1;
+}
+
+/* ==========================================================================
+   ABOUT SECTION LAYOUT
+   ========================================================================== */
+.about-layout {
+  max-width: 720px;
+}
+
+.about-stats {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: var(--space-md);
+}
+
+.about-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
 }
 
 /* ==========================================================================
@@ -273,6 +315,90 @@
 
 .gallery-item:hover .gallery-item-category {
   transform: translateY(0);
+}
+
+/* ==========================================================================
+   GALLERY PAGINATION
+   ========================================================================== */
+.gallery-pagination {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: var(--space-lg);
+}
+
+.pagination-info {
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-text-dark-muted);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.pagination-buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pagination-numbers {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.pagination-btn {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 0.6rem 1.25rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border-light);
+  background-color: var(--color-light-surface);
+  color: var(--color-text-dark-muted);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+  border-color: var(--color-primary);
+}
+
+.pagination-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.pagination-num {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.9rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border-light);
+  background-color: var(--color-light-surface);
+  color: var(--color-text-dark-muted);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.pagination-num:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.pagination-num.active {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-text-light);
+  box-shadow: var(--shadow-sm);
 }
 
 /* ==========================================================================
