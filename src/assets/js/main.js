@@ -37,6 +37,7 @@ function initMobileNav() {
   const toggle = document.querySelector('.mobile-nav-toggle');
   const menu = document.querySelector('.nav-menu');
   const links = document.querySelectorAll('.nav-link');
+  const overlay = document.getElementById('mobile-nav-overlay');
 
   if (!toggle || !menu) return;
 
@@ -44,9 +45,19 @@ function initMobileNav() {
     toggle.classList.toggle('open');
     menu.classList.toggle('open');
     document.body.classList.toggle('no-scroll');
+    if (overlay) overlay.classList.toggle('active');
   };
 
   toggle.addEventListener('click', toggleMenu);
+
+  // Close menu when overlay is clicked
+  if (overlay) {
+    overlay.addEventListener('click', () => {
+      if (menu.classList.contains('open')) {
+        toggleMenu();
+      }
+    });
+  }
 
   // Close menu when a link is clicked
   links.forEach(link => {

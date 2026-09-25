@@ -19,6 +19,20 @@
   --color-primary-light: #b08d68;   /* Light Ash/Chestnut */
   --color-accent: #d4a373;          /* Warm Honey Accent */
   --color-accent-rgb: 212, 163, 115;
+  --color-error: #d90429;
+  --color-success: #20ba5a;
+  --color-whatsapp: #25d366;
+
+  /* Font Scale */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.125rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 2rem;
+  --text-3xl: 2.5rem;
+  --text-4xl: 3rem;
   
   --color-text-dark: #12100e;
   --color-text-dark-muted: #575249;
@@ -80,6 +94,7 @@ body {
   color: var(--color-text-dark);
   line-height: 1.6;
   overflow-x: hidden;
+  touch-action: manipulation;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -107,7 +122,6 @@ button, input, textarea, select {
   color: inherit;
   background: none;
   border: none;
-  outline: none;
 }
 
 button {
@@ -168,4 +182,92 @@ ul, ol {
   background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/* Section background utilities */
+.section-bg-light { background-color: var(--color-light); }
+.section-bg-surface { background-color: var(--color-light-surface); }
+.section-overflow-hidden { position: relative; overflow: hidden; }
+
+/* Section eyebrow label (uppercase pre-title) */
+.section-eyebrow {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  letter-spacing: 1.5px;
+  font-size: var(--text-sm);
+  display: block;
+  margin-bottom: var(--space-xs);
+}
+
+/* Section subtitle paragraph */
+.section-subtitle {
+  max-width: 640px;
+  margin: var(--space-sm) auto 0 auto;
+  color: var(--color-text-dark-muted);
+  font-size: var(--text-md);
+}
+
+/* Social buttons row */
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: var(--space-xl);
+}
+
+/* ==========================================================================
+   ACCESSIBILITY
+   ========================================================================== */
+/* Custom focus-visible ring for keyboard navigation */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+.btn:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Skip-to-content link */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 9999;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  transition: top var(--transition-fast);
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+/* No-scroll body (when mobile menu or lightbox is open) */
+body.no-scroll {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   REDUCED MOTION
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

@@ -43,7 +43,7 @@ function renderSliders(projects, container) {
     const projectHTML = `
       <div class="ba-slider-wrapper" data-id="${project.id}">
         <h3 class="ba-slider-title">${project.titulo}</h3>
-        <div class="ba-slider">
+        <div class="ba-slider" role="img" aria-label="Comparación antes y después: ${project.titulo}">
           <!-- Before image (underneath) -->
           <img class="ba-image ba-image-before" src="${project.antes}" alt="Antes - ${project.titulo}">
           <span class="ba-label ba-label-before">Antes</span>

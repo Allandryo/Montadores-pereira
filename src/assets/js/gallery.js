@@ -96,7 +96,7 @@ function renderGalleryItems(items, container) {
     itemEl.style.transform = 'translateY(12px)';
 
     itemEl.innerHTML = `
-      <img src="${item.imagen}" alt="${item.titulo}" loading="lazy">
+      <img src="${item.imagen}" alt="${item.titulo}" loading="lazy" width="400" height="300">
       <div class="gallery-item-overlay">
         <span class="gallery-item-category">${displayCategory}</span>
         <h4 class="gallery-item-title">${item.titulo}</h4>
@@ -137,6 +137,7 @@ function renderPagination(state, totalPages, grid, container) {
   // Prev button
   const prevBtn = document.createElement('button');
   prevBtn.className = 'pagination-btn pagination-prev';
+  prevBtn.setAttribute('aria-label', 'Página anterior');
   prevBtn.innerHTML = '&larr; Anterior';
   prevBtn.disabled = state.currentPage === 1;
   prevBtn.addEventListener('click', () => {
@@ -155,6 +156,8 @@ function renderPagination(state, totalPages, grid, container) {
     const pageBtn = document.createElement('button');
     pageBtn.className = 'pagination-num' + (i === state.currentPage ? ' active' : '');
     pageBtn.textContent = i;
+    pageBtn.setAttribute('aria-label', `Ir a página ${i}`);
+    if (i === state.currentPage) pageBtn.setAttribute('aria-current', 'page');
     pageBtn.addEventListener('click', () => {
       if (state.currentPage !== i) {
         state.currentPage = i;
@@ -168,6 +171,7 @@ function renderPagination(state, totalPages, grid, container) {
   // Next button
   const nextBtn = document.createElement('button');
   nextBtn.className = 'pagination-btn pagination-next';
+  nextBtn.setAttribute('aria-label', 'Página siguiente');
   nextBtn.innerHTML = 'Siguiente &rarr;';
   nextBtn.disabled = state.currentPage === totalPages;
   nextBtn.addEventListener('click', () => {
@@ -208,9 +212,13 @@ function setupFilters(state, grid, filterContainer, paginationContainer) {
   
   buttons.forEach(button => {
     button.addEventListener('click', function() {
-      // Set active button style
-      buttons.forEach(btn => btn.classList.remove('active'));
+      // Set active button style and aria-pressed
+      buttons.forEach(btn => {
+        btn.classList.remove('active');
+        btn.setAttribute('aria-pressed', 'false');
+      });
       this.classList.add('active');
+      this.setAttribute('aria-pressed', 'true');
 
       const filterValue = this.getAttribute('data-filter');
       state.currentFilter = filterValue;
